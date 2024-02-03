@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Protest+Riot&display=swap');
+:root{
+	--primary-green:hsl(75, 94%, 57%);
+
+	--neutral-White: hsl(0, 0%, 100%);
+	--neutral-Grey: hsl(0, 0%, 20%);
+	--neutral-Dark-Grey: hsl(0, 0%, 12%);
+	--neutral-Off-Black: hsl(0, 0%, 8%);
+
+	--font-size:14px;
+
+	--mobile:375px;
+	--desktop:1440px;
+
+	--font-weight-1:400;
+	--font-weight-2:600;
+	--font-weight-3:700;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: var(--mobile);
+  }
+}
+
+*{
+	font-family: 'Inter', sans-serif;
+	outline: none;
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-size: var(--font-size);
+	background: var(--neutral-Dark-Grey);
+}
+
+
+.card{
+	/*max-width: var(--mobile);*/
+	flex-direction: column;
+	max-width:calc(var(--mobile) - 80px);
+	height:fit-content;
+	color : white;
+	margin: 80px auto;
+	padding: 10px 20px;
+	background:var(--neutral-Off-Black);
+	font-weight: var(--font-weight-1);
+}
+
+img{
+	width:120px;	
+	margin:10px 80px;
+	border-radius:50%; 
+}
+
+
+#name{
+	font-size: calc(var(--font-size)*2);
+	text-align: center;
+	margin: unset;
+	font-weight: var(--font-weight-3);
+}
+
+#location{
+	font-size: calc(var(--font-size)*1.15);
+	color:var(--primary-green);
+	text-align: center;
+	margin: unset;
+}
+
+
+#role{
+	text-align: center;
+}
+
+.links{
+	display: inline-block;
+}
+
+button{
+	width:275px;
+	height:40px;
+	margin:5px 15px;
+	background: var(--neutral-Grey);
+	color:white;
+	font-size: var(--font-size);
+	font-weight: var(--font-weight-2);
+	outline: none;
+	border:2px solid var(--neutral-Grey);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button:focus{
+	background:var(--primary-green);
+	color: var(--neutral-Off-Black);
+	border:2px solid var(--primary-green);
+}
+
