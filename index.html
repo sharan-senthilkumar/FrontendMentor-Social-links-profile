@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; color:white;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
 
-  <div class="card">
-    <img src="assets/images/avatar-jessica.jpeg">
-    <div class="profile">
-  <p id="name">Jessica Randall</p>
-  <p id="location">London, United Kingdom</p>
-  <p id="role">"Front-end developer and avid reader."</p>
-</div>
-<div class="links">
-  <button>GitHub</button>
-  <button>Frontend Mentor</button>
-  <button>LinkedIn</button>
-  <button>Twitter</button>
-  <button>Instagram</button>
-</div>
-</div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/sharan-senthilkumar">Sharan-senthilkumar</a>
-  </div>
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #c026d3;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="body-dark">
+    <div class="card">
+      <i onclick="theme()" class="fa-solid fa-sun"></i>
+      <img class="img" src="assets/images/avatar-jessica.jpeg" />
+      <div class="profile">
+        <p class="name">Jessica Randall</p>
+        <p class="location location-dark">London, United Kingdom</p>
+        <p class="role">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="links">
+        <button class="button">GitHub</button>
+        <button class="button">Frontend Mentor</button>
+        <button class="button">LinkedIn</button>
+        <button class="button">Twitter</button>
+        <button class="button">Instagram</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/sharan-senthilkumar"
+        >Sharan-senthilkumar</a
+      >
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
