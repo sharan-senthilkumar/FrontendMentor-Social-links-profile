@@ -13,6 +13,7 @@ I have completed my challenge
 
 - HTML
 - CSS
+- **JQuery** (JavaScript)
 
 I welcome any feedback or suggestions for improving this project. Feel free to leave your comments below.🙏
 
