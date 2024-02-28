@@ -6,6 +6,5 @@ $(document).ready(function(){
         $('.img').toggleClass('img-light');
         $('.button').toggleClass('button-light');
         $('.fa-solid').toggleClass('fa-moon');
-        $('.fa-solid').css('color', 'seagreen');
     });
 });
